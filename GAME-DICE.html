@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY YOUR LUCK !!!</title>
+</head>
+<body>
+
+     <h1 style="color: blue;text-align: center;">WELCOME TO THE WORLD OF LUCK !!!</h1><br><br>
+  
+    <img src="" id="i"><br><br>
+
+    
+    <div><h1>KARAN BELWAL :</h1></div><h2 id="s"></h2>
+
+    <div><h1>KAVITA PANDEY :</h1></div><h2 id="u"></h2><br><br>
+
+    <h1 style="color: red;" id="w"></h1>
+    
+    
+    
+   
+
+
+
+    <br><br><br><br>
+    <button onclick="test()" style="background-color: hotpink;">SHOW DICE</button>
+    <button onclick="start()" style="background-color: green;">START</button>
+</body>
+
+<script>
+
+    function test(){
+
+     document.getElementById("i").src="1.png";
+    }
+
+    function start(){
+        var c=0,score=0;
+        c=Math.floor(Math.random() * 6 ) + 1;
+        score=score+c;
+        document.getElementById("s").innerHTML=score;
+
+        var u=0,score1=0;
+        u=Math.floor(Math.random() * 6 ) + 1;
+        score1=score1+u;
+        document.getElementById("u").innerHTML=score1;
+
+      
+      if(score>score1){
+        document.getElementById("w").innerHTML="KARAN WON THE MATCH !!!"
+      }
+      else if(score1>score){
+        document.getElementById("w").innerHTML="KAVITA WON THE MATCH !!!"
+      }
+      else{
+        document.getElementById("w").innerHTML="MATCH TIE !!!"
+      }
+
+
+  
+  if(c==1){
+    document.getElementById("i").src="1.png";
+  }
+  if(c==2){
+    document.getElementById("i").src="2.png";
+  }
+  if(c==3){
+    document.getElementById("i").src="3.png";
+  }
+  if(c==4){
+    document.getElementById("i").src="4.png";
+  }
+  if(c==5){
+    document.getElementById("i").src="5.png";
+  }
+  if(c==6){
+    document.getElementById("i").src="6.png";
+  }
+  
+}
+  
+
+</script><br><br>
+
+</html>
